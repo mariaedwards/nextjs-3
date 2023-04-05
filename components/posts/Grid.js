@@ -3,7 +3,7 @@ import Item from './Item';
 
 export default function Grid({ posts }) {
   return (
-    <ul>
+    <ul className={classes.grid}>
       {posts.map((post) => {
         return <Item key={post.slug} post={post} />;
       })}
